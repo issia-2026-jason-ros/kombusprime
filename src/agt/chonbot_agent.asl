@@ -1,5 +1,10 @@
 !walk.           //move forward and avoid obstacles
 
 
-+!walk
-   <- .print("I do not know how to satisfy this goal.").
++!walk : ultrasonic_distance(D) & D <= 20 
+   <- .move(backward)
+      .move(right)
+
++!walk : ultrasonic_distance(D) & D > 20 
+   <- .move(forward);
+
