@@ -1,8 +1,7 @@
 !walk.
 
-+!walk : ultrasonic_distance(D) & D <= 20 
++!walk : ultrasonic_distance(D) & D <= 40 
    <- .move(backward);
-      .wait(1000);
       .move(right);
       .print(ultrasonic_distance(D));
       !walk.
