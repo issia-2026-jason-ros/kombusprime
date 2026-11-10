@@ -14,6 +14,6 @@
   actions:    
     topic_writing_actions:
       action_name: move
-      service_name: /arduino/motor/command
-              
+      topic_name: /arduino/motor/command
+      topic_type: std_msgs/msg/String        
       # Specify the topic writing actions
