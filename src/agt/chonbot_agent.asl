@@ -2,8 +2,8 @@
 
 
 +!walk : ultrasonic_distance(D) & D <= 20 
-   <- .move(backward)
-      .move(right)
+   <- .move(backward);
+      .move(right).
 
 +!walk : ultrasonic_distance(D) & D > 20 
    <- .move(forward);
