@@ -1,11 +1,10 @@
-!walk.           //move forward and avoid obstacles
-
+!walk.
 
 +!walk : ultrasonic_distance(D) & D <= 20 
    <- .move(backward);
       .wait(1000);
       .move(right).
 
-+!walk : ultrasonic_distance(D) & D > 20 
++!walk
    <- .move(forward).
 
