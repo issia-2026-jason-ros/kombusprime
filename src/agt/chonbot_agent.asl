@@ -6,5 +6,6 @@
       .move(right).
 
 +!walk
-   <- .move(forward).
+   <- .move(forward);
+      .print(ultrasonic_distance(D)).
 
